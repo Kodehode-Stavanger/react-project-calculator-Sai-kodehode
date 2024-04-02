@@ -36,8 +36,8 @@ function Theme({ initialTheme, toggleTheme }) {
             </div>
           </div>
 
-          <button onClick={handleToggle} className={`themeToggle ${theme}`}>
-            <div className="circle"></div>
+          <button className={`themeToggle ${theme}`}>
+            <div onClick={handleToggle} className="circle"></div>
           </button>
         </div>
       </div>
