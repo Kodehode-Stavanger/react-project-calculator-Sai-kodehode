@@ -19,14 +19,12 @@ function Calculator() {
 
   function clickNumber(value) {
     if (firstNumber.includes(".") && symbol !== "") {
-      // If the symbol is set and the first number contains a decimal point,
-      // treat the input as part of the second number
+      // If the symbol is set and the first number contains a decimal point, treat the input as part of the second number
       if (secondNumber.length < 14) {
         setSecondNumber((prevValue) => prevValue + value);
       }
     } else {
-      // If the symbol is not set or the first number doesn't contain a decimal point,
-      // treat the input as part of the first number
+      // If the symbol is not set or the first number doesn't contain a decimal point, treat the input as part of the first number
       if (symbol === "") {
         if (firstNumber.length < 14) {
           setFirstNumber((prevValue) =>

@@ -20,12 +20,12 @@ function Display({ firstNumber, symbol, secondNumber }) {
   const totalLength =
     formattedFirstNumber.length + symbol.length + formattedSecondNumber.length;
 
-  // Determine the font size based on the total length
-  let fontSize = "2.6rem"; // Default font size
+  // change the font size based on the total length
+  let fontSize = "2.6rem";
   if (totalLength > 14) {
-    fontSize = `${1.8 - (totalLength - 14) * 0.1}rem`; // Decrease font size based on overflow
+    fontSize = `${1.8 - (totalLength - 14) * 0.1}rem`;
     if (parseFloat(fontSize) < 1) {
-      fontSize = "1rem"; // Minimum font size to prevent too small text
+      fontSize = "1rem";
     }
   }
 
