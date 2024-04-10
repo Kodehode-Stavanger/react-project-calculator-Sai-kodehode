@@ -47,10 +47,6 @@
   background-color: #ff8b38 !important;
 }
 
-.theme2 .circle:hover {
-  background-color: #ff8b38 !important;
-}
-
 .theme3 {
   --main-background: hsl(268, 75%, 9%);
   --toggle-keypad-background: hsl(268, 71%, 12%);
@@ -81,10 +77,6 @@
 }
 
 .theme3 .equalto:hover {
-  background-color: #94fff9 !important;
-}
-
-.theme3 .circle:hover {
   background-color: #94fff9 !important;
 }
 

@@ -32,3 +32,33 @@
 .themeToggle.theme3 {
   justify-content: flex-end;
 }
+
+.circle {
+  width: 18px;
+  height: 18px;
+  margin: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: var(--toggle-equalto-key-background);
+}
+
+.themeToggle.theme1 .circle:hover {
+  background-color: #f96c5b;
+}
+
+.themeToggle.theme2 .circle:hover {
+  background-color: #ff8b38;
+}
+
+.themeToggle.theme3 .circle:hover {
+  background-color: #94fff9;
+}
+
+@media only screen and (min-width: 1440px) {
+  .circle {
+    width: 14px;
+    height: 14px;
+    margin: 5px;
+    border-radius: 50%;
+  }
+}
