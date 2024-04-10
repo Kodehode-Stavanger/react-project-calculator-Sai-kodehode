@@ -44,19 +44,6 @@
   margin: 0 14px;
 }
 
-.circle {
-  width: 18px;
-  height: 18px;
-  margin: 5px;
-  border-radius: 50%;
-  cursor: pointer;
-  background-color: var(--toggle-equalto-key-background);
-}
-
-.circle:hover {
-  background-color: #f96c5b;
-}
-
 /* media query for desktop */
 
 @media only screen and (min-width: 1440px) {
