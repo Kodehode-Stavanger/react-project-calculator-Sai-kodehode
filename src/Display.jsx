@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./Display.module.css";
 
 function Display({ firstNumber, symbol, secondNumber }) {
   // Function to add commas to numbers
@@ -35,7 +36,7 @@ function Display({ firstNumber, symbol, secondNumber }) {
   };
 
   return (
-    <div className="display" style={style}>
+    <div className={styles.display} style={style}>
       <p>{formattedFirstNumber}</p>
       <p>{symbol}</p>
       <p>{formattedSecondNumber}</p>

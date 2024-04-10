@@ -2,6 +2,7 @@ import { useState } from "react";
 import Display from "./Display";
 import * as math from "mathjs";
 import Theme from "./Theme";
+import styles from "./Calculator.module.css";
 
 function Calculator() {
   // Display values useState
@@ -131,18 +132,18 @@ function Calculator() {
   }
 
   return (
-    <div className={`container ${theme}`}>
+    <div className={`${styles.container} ${styles[theme]}`}>
       <Theme initialTheme={theme} toggleTheme={toggleTheme} />
       <Display
         firstNumber={firstNumber}
         symbol={symbol}
         secondNumber={secondNumber}
       />
-      <div className="calcElements">
+      <div className={styles.calcElements}>
         <button onClick={() => clickNumber("7")}>7</button>
         <button onClick={() => clickNumber("8")}>8</button>
         <button onClick={() => clickNumber("9")}>9</button>
-        <button onClick={clickDelOption} className="delete">
+        <button onClick={clickDelOption} className={styles.delete}>
           DEL
         </button>
         <button onClick={() => clickNumber("4")}>4</button>
@@ -157,10 +158,10 @@ function Calculator() {
         <button onClick={() => clickNumber("0")}>0</button>
         <button onClick={() => clickSymbol("/")}>/</button>
         <button onClick={() => clickSymbol("*")}>x</button>
-        <button onClick={resetDisplay} className="reset">
+        <button onClick={resetDisplay} className={styles.reset}>
           RESET
         </button>
-        <button onClick={evalResult} id="equal" className="equalto">
+        <button onClick={evalResult} id="equal" className={styles.equalto}>
           =
         </button>
       </div>

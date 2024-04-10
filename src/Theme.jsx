@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import styles from "./Theme.module.css";
 function Theme({ initialTheme, toggleTheme }) {
   const [theme, setTheme] = useState(initialTheme);
 
@@ -22,22 +22,22 @@ function Theme({ initialTheme, toggleTheme }) {
   }
 
   return (
-    <div className="header">
+    <div className={styles.header}>
       <p>calc</p>
 
-      <div className="theme">
+      <div className={styles.theme}>
         <p>THEME</p>
-        <div className="toggledetails">
+        <div className={styles.toggledetails}>
           <div>
-            <div className="themeCount">
+            <div className={styles.themeCount}>
               <p>1</p>
-              <p className="two">2</p>
+              <p className={styles.two}>2</p>
               <p>3</p>
             </div>
           </div>
 
           <button className={`themeToggle ${theme}`}>
-            <div onClick={handleToggle} className="circle"></div>
+            <div onClick={handleToggle} className={styles.circle}></div>
           </button>
         </div>
       </div>
