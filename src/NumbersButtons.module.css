@@ -1,0 +1,122 @@
+.container2 {
+  background-color: var(--toggle-keypad-background);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 330px;
+  padding: 16px;
+  border-radius: 6px;
+  gap: 12px;
+  margin: 0 auto;
+  height: 430px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  background-color: var(--key-background-color);
+  color: var(--key-text-color);
+  font-weight: bold;
+  font-size: 32px;
+  border: none;
+  border-bottom: 4px solid var(---key-bottom-color);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* .button:hover {
+    background-color: #ffffff;
+  } */
+
+.reset,
+.equalto {
+  grid-column: span 2;
+}
+
+.delete,
+.reset {
+  background-color: var(--del-reset-background-color);
+  border-bottom: 4px solid var(--del-reset-bottom-color);
+  color: var(--del-reset-text-color);
+  font-size: 18px;
+}
+
+.equalto {
+  background-color: var(--toggle-equalto-key-background);
+  color: var(--equalto-text-color);
+  font-size: 18px;
+  border: none;
+  border-bottom: 4px solid var(--toggle-equalto-key-bottom);
+  border-radius: 6px;
+}
+
+.container2.theme1 .button:hover {
+  background-color: #ffffff;
+}
+
+.container2.theme1 .delete:hover,
+.container2.theme1 .reset:hover {
+  background-color: #a2b3e1;
+}
+
+.container2.theme1 .equalto:hover {
+  background-color: #f96c5b; /* Change background color on hover for equalto button */
+}
+
+/* .delete:hover {
+    background-color: #a2b3e1;
+  }
+  
+  .reset:hover {
+    background-color: #a2b3e1;
+  }
+  .equalto:hover {
+    background-color: #f96c5b;
+  } */
+
+/* NumbersButtons.module.css */
+
+.container2.theme2 .button:hover {
+  background-color: #ffffff;
+}
+
+.container2.theme2 .delete:hover,
+.container2.theme2 .reset:hover {
+  background-color: #62b5bd;
+}
+
+.container2.theme2 .equalto:hover {
+  background-color: #ff8b38; /* Change background color on hover for equalto button */
+}
+
+.container2.theme3 .button:hover {
+  background-color: #6b34ac; /* Change background color on hover */
+}
+
+.container2.theme3 .delete:hover,
+.container2.theme3 .reset:hover {
+  background-color: #8632ae; /* Change background color on hover for delete and reset buttons */
+}
+
+.container2.theme3 .equalto:hover {
+  background-color: #94fff9; /* Change background color on hover for equalto button */
+}
+
+@media only screen and (min-width: 1440px) {
+  .container2 {
+    width: 470px;
+    gap: 20px;
+    height: 420px;
+  }
+
+  button {
+    font-size: 32px;
+  }
+
+  .delete,
+  .reset {
+    font-size: 22px;
+  }
+}

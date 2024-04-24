@@ -1,7 +1,8 @@
 import { useState } from "react";
+import NumbersButtons from "./NumbersButtons";
 import Display from "./Display";
-import * as math from "mathjs";
 import Theme from "./Theme";
+import * as math from "mathjs";
 import styles from "./Calculator.module.css";
 
 function Calculator() {
@@ -132,39 +133,26 @@ function Calculator() {
   }
 
   return (
-    <div className={`${styles.container} ${styles[theme]}`}>
+    <div
+      // className={styles.container}
+      className={`${styles.container} ${styles[theme]}`}
+    >
       <Theme initialTheme={theme} toggleTheme={toggleTheme} />
+
       <Display
         firstNumber={firstNumber}
         symbol={symbol}
         secondNumber={secondNumber}
       />
-      <div className={styles.calcElements}>
-        <button onClick={() => clickNumber("7")}>7</button>
-        <button onClick={() => clickNumber("8")}>8</button>
-        <button onClick={() => clickNumber("9")}>9</button>
-        <button onClick={clickDelOption} className={styles.delete}>
-          DEL
-        </button>
-        <button onClick={() => clickNumber("4")}>4</button>
-        <button onClick={() => clickNumber("5")}>5</button>
-        <button onClick={() => clickNumber("6")}>6</button>
-        <button onClick={() => clickSymbol("+")}>+</button>
-        <button onClick={() => clickNumber("1")}>1</button>
-        <button onClick={() => clickNumber("2")}>2</button>
-        <button onClick={() => clickNumber("3")}>3</button>
-        <button onClick={() => clickSymbol("-")}>-</button>
-        <button onClick={() => clickDot(".")}>.</button>
-        <button onClick={() => clickNumber("0")}>0</button>
-        <button onClick={() => clickSymbol("/")}>/</button>
-        <button onClick={() => clickSymbol("*")}>x</button>
-        <button onClick={resetDisplay} className={styles.reset}>
-          RESET
-        </button>
-        <button onClick={evalResult} id="equal" className={styles.equalto}>
-          =
-        </button>
-      </div>
+      <NumbersButtons
+        clickNumber={clickNumber}
+        clickSymbol={clickSymbol}
+        clickDot={clickDot}
+        clickDelOption={clickDelOption}
+        resetDisplay={resetDisplay}
+        evalResult={evalResult}
+        theme={theme}
+      />
     </div>
   );
 }

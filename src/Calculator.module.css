@@ -31,22 +31,6 @@
   --del-reset-bottom-color: hsl(185, 58%, 25%);
 }
 
-.theme2 .calcElements button:hover {
-  background-color: #ffffff;
-}
-
-.theme2 .delete:hover {
-  background-color: #62b5bd !important;
-}
-
-.theme2 .reset:hover {
-  background-color: #62b5bd !important;
-}
-
-.theme2 .equalto:hover {
-  background-color: #ff8b38 !important;
-}
-
 .theme3 {
   --main-background: hsl(268, 75%, 9%);
   --toggle-keypad-background: hsl(268, 71%, 12%);
@@ -63,23 +47,6 @@
   --del-reset-bottom-color: hsl(285, 91%, 52%);
 }
 
-/* Theme 3 hover effect */
-.theme3 .calcElements button:hover {
-  background-color: #6b34ac;
-}
-
-.theme3 .delete:hover {
-  background-color: #8632ae !important;
-}
-
-.theme3 .reset:hover {
-  background-color: #8632ae !important;
-}
-
-.theme3 .equalto:hover {
-  background-color: #94fff9 !important;
-}
-
 .container {
   display: flex;
   flex-direction: column;
@@ -90,81 +57,7 @@
   background-color: var(--main-background);
 }
 
-.calcElements {
-  background-color: var(--toggle-keypad-background);
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  width: 330px;
-  padding: 16px;
-  border-radius: 6px;
-  gap: 12px;
-  margin: 0 auto;
-  height: 430px;
-}
-
-.calcElements button {
-  background-color: var(--key-background-color);
-  color: var(--key-text-color);
-  font-weight: bold;
-  font-size: 32px;
-  border: none;
-  border-bottom: 4px solid var(---key-bottom-color);
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-.calcElements button:hover {
-  background-color: #ffffff;
-}
-.reset,
-.equalto {
-  grid-column: span 2;
-}
-
-.delete,
-.reset {
-  background-color: var(--del-reset-background-color) !important;
-  border-bottom: 4px solid var(--del-reset-bottom-color) !important;
-  color: var(--del-reset-text-color) !important;
-  font-size: 18px !important;
-}
-.delete:hover {
-  background-color: #a2b3e1 !important;
-}
-
-.reset:hover {
-  background-color: #a2b3e1 !important;
-}
-.equalto {
-  background-color: var(--toggle-equalto-key-background) !important;
-  color: var(--equalto-text-color) !important;
-  font-size: 18px;
-  border: none;
-  border-bottom: 4px solid var(--toggle-equalto-key-bottom) !important;
-  border-radius: 6px;
-}
-.equalto:hover {
-  background-color: #f96c5b !important;
-}
-
-/* media query for desktop */
-
 @media only screen and (min-width: 1440px) {
-  .calcElements {
-    width: 470px;
-    gap: 20px;
-    height: 420px;
-  }
-
-  .calcElements button {
-    font-size: 32px;
-  }
-
-  .delete,
-  .reset {
-    font-size: 22px !important;
-  }
-
   .themeToggle {
     margin-top: 5px;
     width: 60px;
