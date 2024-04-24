@@ -1,0 +1,72 @@
+/* Theme.css */
+.header {
+  display: flex;
+  flex-direction: row;
+  width: 330px;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: var(--display-theme-text-color);
+  margin: 0 auto;
+  font-size: 32px;
+}
+
+.theme {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: last baseline;
+  width: 40%;
+}
+
+.theme p {
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.toggledetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.themeCount {
+  width: 55px;
+}
+.themeCount p {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.two {
+  margin: 0 14px;
+}
+
+/* media query for desktop */
+
+@media only screen and (min-width: 1440px) {
+  .header {
+    width: 470px;
+    font-size: 32px;
+  }
+
+  .theme {
+    width: 25%;
+  }
+  .themeCount p {
+    font-size: 12px;
+  }
+
+  .two {
+    margin: 0 14px;
+  }
+
+  .circle {
+    width: 14px;
+    height: 14px;
+    margin: 5px;
+    border-radius: 50%;
+  }
+}

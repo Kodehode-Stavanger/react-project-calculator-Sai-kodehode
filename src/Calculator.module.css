@@ -1,0 +1,67 @@
+.theme1 {
+  --main-background: hsl(222, 26%, 31%);
+  --toggle-keypad-background: hsl(223, 31%, 20%);
+  --screen-background: hsl(224, 36%, 15%);
+  --key-background-color: hsl(30, 25%, 89%);
+  ---key-bottom-color: hsl(28, 16%, 65%);
+  --display-theme-text-color: hsl(0, 0%, 100%);
+  --toggle-equalto-key-background: hsl(6, 63%, 50%);
+  --toggle-equalto-key-bottom: hsl(6, 70%, 34%);
+  --equalto-text-color: hsl(0, 0%, 100%);
+  --key-text-color: hsl(221, 14%, 31%);
+  --del-reset-background-color: hsl(225, 21%, 49%);
+  --del-reset-text-color: hsl(0, 0%, 100%);
+  --del-reset-bottom-color: hsl(224, 28%, 35%);
+}
+
+/* Theme 2 */
+.theme2 {
+  --main-background: hsl(0, 0%, 90%);
+  --toggle-keypad-background: hsl(0, 5%, 81%);
+  --screen-background: hsl(0, 0%, 93%);
+  --key-background-color: hsl(45, 7%, 89%);
+  ---key-bottom-color: hsl(35, 11%, 61%);
+  --display-theme-text-color: hsl(60, 10%, 19%);
+  --toggle-equalto-key-background: hsl(25, 98%, 40%);
+  --toggle-equalto-key-bottom: hsl(25, 99%, 27%);
+  --equalto-text-color: hsl(0, 0%, 100%);
+  --key-text-color: hsl(60, 10%, 19%);
+  --del-reset-background-color: hsl(185, 42%, 37%);
+  --del-reset-text-color: hsl(0, 0%, 100%);
+  --del-reset-bottom-color: hsl(185, 58%, 25%);
+}
+
+.theme3 {
+  --main-background: hsl(268, 75%, 9%);
+  --toggle-keypad-background: hsl(268, 71%, 12%);
+  --screen-background: hsl(268, 71%, 12%);
+  --key-background-color: hsl(268, 47%, 21%);
+  ---key-bottom-color: hsl(290, 70%, 36%);
+  --display-theme-text-color: hsl(52, 100%, 62%);
+  --toggle-equalto-key-background: hsl(176, 100%, 44%);
+  --toggle-equalto-key-bottom: hsl(177, 92%, 70%);
+  --equalto-text-color: hsl(198, 20%, 13%);
+  --key-text-color: hsl(52, 100%, 62%);
+  --del-reset-background-color: hsl(281, 89%, 26%);
+  --del-reset-text-color: hsl(0, 0%, 100%);
+  --del-reset-bottom-color: hsl(285, 91%, 52%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--main-background);
+}
+
+@media only screen and (min-width: 1440px) {
+  .themeToggle {
+    margin-top: 5px;
+    width: 60px;
+    height: 22px;
+    border-radius: 10px;
+  }
+}

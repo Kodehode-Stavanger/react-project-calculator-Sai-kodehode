@@ -1,5 +1,11 @@
+import Calculator from "./Calculator";
+
 function App() {
-  return <></>;
+  return (
+    <>
+      <Calculator />
+    </>
+  );
 }
 
 export default App;

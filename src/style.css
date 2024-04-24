@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.themeToggle {
+  margin-top: 5px;
+  width: 70px;
+  height: 28px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--toggle-keypad-background);
+  border-radius: 16px;
+  text-decoration: none;
+  border: none;
+}
+.themeToggle.theme1 {
+  justify-content: flex-start;
+}
+
+.themeToggle.theme2 {
+  justify-content: center;
+}
+
+.themeToggle.theme3 {
+  justify-content: flex-end;
+}
+
+.circle {
+  width: 18px;
+  height: 18px;
+  margin: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: var(--toggle-equalto-key-background);
+}
+
+.themeToggle.theme1 .circle:hover {
+  background-color: #f96c5b;
+}
+
+.themeToggle.theme2 .circle:hover {
+  background-color: #ff8b38;
+}
+
+.themeToggle.theme3 .circle:hover {
+  background-color: #94fff9;
+}
+
+@media only screen and (min-width: 1440px) {
+  .circle {
+    width: 14px;
+    height: 14px;
+    margin: 5px;
+    border-radius: 50%;
+  }
+}
